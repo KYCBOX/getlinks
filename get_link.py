@@ -51,9 +51,11 @@ for latest_email in inbox:
             print("")
             print(f"{confirmation_link}")
             print("")
-            print("Файл wise_link.txt успешно создан!")
+            print("Файл link.txt со ссылкой успешно создан!")
+            print("Вы можете удалить все письма с помощью 'python clean_all.py'")
+            print("")
             # Запись ссылки в файл
-            with open('wise_link.txt', 'w') as file:
+            with open('link.txt', 'w') as file:
                 file.write(confirmation_link)
             
             break  # Если ссылка найдена, завершаем цикл
@@ -62,4 +64,4 @@ for latest_email in inbox:
 
 # Проверяем, была ли найдена ссылка
 if 'confirmation_link' not in locals():
-    print("Ссылка не найдена в письмах входящих.")
+    print("В письмах в папке Inbox ссылка не найдена.")
