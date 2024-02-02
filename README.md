@@ -1,5 +1,4 @@
-# Outlook Email Script
-
+# getlink
 Этот скрипт написан на языке Python и предназначен для работы с почтовым ящиком Outlook.com. 
 
 ## Требования
